@@ -20,9 +20,14 @@
     }
 
 
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+// font-family: 'Open Sans', sans-serif;
 
-// contanier setup
-.contaniner{
+
+
+// container 
+.container{
     width: 1171px;
     max-width: 100%;
     display: block;
@@ -30,8 +35,17 @@
 }
 
 
+// color variable
 
-// start staiky-up section
+$yellow : #fdce16;
+$white:#ffffff;
+$black:#161616;
+$gray:#acacac;
+$border1:#e7e7e7;
+
+
+
+// start manu-up section
 .border-1{
                 border-bottom: 1px solid #bebebe;
                 
@@ -48,7 +62,7 @@
         }
         .email,.number{
             i{
-                color: #ffd34c;
+                color:$yellow;
                 font-size: 13px;
                 padding-top: 9px;
                 padding-bottom: 9px;
@@ -62,20 +76,24 @@
                 text-decoration: none;
                 padding-right: 8px;
             }
+            a:hover{
+                color: #ffd34c;
+            }
         }
 
         .email{
             border-right: 1px solid #bebebe;
         }
+       
         .number{
             padding-left: 15px;
         }
 
     }
 
-// social icon
+// social media icon
 
-    .soical{
+    .social{
         
         .icon{
             display: flex;
@@ -108,4 +126,5 @@
     }
 }
 
+// --------------------------------------- start manu section -----------------------
 
