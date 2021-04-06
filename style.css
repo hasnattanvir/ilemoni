@@ -1,0 +1,109 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.contaniner {
+  width: 1171px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.border-1 {
+  border-bottom: 1px solid #bebebe;
+}
+
+.main_div .header_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .main_div .header_info {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.main_div .header_info .email i, .main_div .header_info .number i {
+  color: #ffd34c;
+  font-size: 13px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.main_div .header_info .email a, .main_div .header_info .number a {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #bebebe;
+  text-decoration: none;
+  padding-right: 8px;
+}
+
+.main_div .header_info .email {
+  border-right: 1px solid #bebebe;
+}
+
+.main_div .header_info .number {
+  padding-left: 15px;
+}
+
+.main_div .soical .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .main_div .soical .icon {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.main_div .soical .icon .box {
+  text-align: center;
+}
+
+.main_div .soical .icon .box i {
+  color: #bebebe;
+  border-right: 1px solid #bebebe;
+  border-top: 1px solid #bebebe;
+  padding: 9px 9px 9px 9px;
+}
+
+@media (min-width: 576px) {
+  .main_div .soical .icon .box i {
+    border-top: none;
+    border-right: 1px solid #bebebe;
+  }
+}
+
+.main_div .soical .icon .left-b {
+  border-left: 1px solid #bebebe;
+}
+/*# sourceMappingURL=style.css.map */
