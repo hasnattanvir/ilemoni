@@ -4,6 +4,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -131,6 +136,10 @@ a:hover {
   border-left: 1px solid #bebebe;
 }
 
+.sticky-top {
+  background: #ffffff;
+}
+
 .navbar {
   padding: 0px;
   margin: 0px;
@@ -182,7 +191,7 @@ a:hover {
   padding-right: 0px;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 992px) {
   .navbar {
     padding: 0px;
     margin: 0px;
@@ -217,6 +226,347 @@ a:hover {
   }
   .navbar .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0px;
+  }
+}
+
+.banner {
+  background-color: #161616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 450px) {
+  .banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.banner .inner-box {
+  max-width: 100%;
+  margin: auto;
+}
+
+.banner .inner-box .text1 .h1 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 40px;
+  color: #fdce16;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.banner .inner-box .text2 .inner-box {
+  font-family: 'Myriad Pro';
+}
+
+.banner .inner-box .text2 .inner-box .h3 {
+  padding: 0px 0px 0px 127px;
+  margin: 0px;
+  font-size: 25px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.banner .inner-box .text2 .inner-box .h1 {
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 33px;
+  padding-left: 100px;
+}
+
+@media (min-width: 330px) {
+  .banner {
+    background-color: #161616;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .banner .inner-box {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .banner .inner-box .text1 .h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+    color: #fdce16;
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    line-height: 43px;
+  }
+  .banner .inner-box .text2 .inner-box {
+    font-family: 'Myriad Pro';
+    text-align: center;
+  }
+  .banner .inner-box .text2 .inner-box .h3 {
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .banner .inner-box .text2 .inner-box .h1 {
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 74px;
+  }
+}
+
+@media (min-width: 550px) {
+  .banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .banner .inner-box .text1 .h1 {
+    font-size: 60px;
+    line-height: 43px;
+  }
+  .banner .inner-box .text2 .inner-box {
+    font-family: 'Myriad Pro';
+    text-align: center;
+  }
+  .banner .inner-box .text2 .inner-box .h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .banner .inner-box .text2 .inner-box .h1 {
+    font-size: 60px;
+    line-height: 74px;
+  }
+}
+
+@media (min-width: 990px) {
+  .banner {
+    padding-top: 164px;
+    padding-bottom: 164px;
+    background-color: #161616;
+  }
+  .banner .banner_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner .inner-box {
+    width: 742px;
+    max-width: 100%;
+    text-align: unset;
+  }
+  .banner .inner-box .text1 .h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 120px;
+    color: #fdce16;
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    line-height: 43px;
+  }
+  .banner .inner-box .text2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .banner .inner-box .text2 .inner-box {
+    font-family: 'Myriad Pro';
+  }
+  .banner .inner-box .text2 .inner-box .h3 {
+    text-align: center;
+    padding: 0px 0px 0px 144px;
+    margin: 0px;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  .banner .inner-box .text2 .inner-box .h1 {
+    text-align: right;
+    padding: 0px 56px 0px 0px;
+    margin: 0px;
+    font-size: 120px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 74px;
+  }
+}
+
+.button-text {
+  margin-top: 20px;
+}
+
+.button-text .wrap-box {
+  max-width: 100%;
+  margin: auto;
+}
+
+.button-text .wrap-box .no-pad {
+  padding: 0px;
+}
+
+.button-text .wrap-box .text .texts {
+  width: 100%;
+}
+
+.button-text .wrap-box .text .texts p {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Myriad Pro';
+  color: #ffffff;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.button-text .wrap-box .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-text .wrap-box .button .btn1 {
+  margin-right: 3px;
+}
+
+.button-text .wrap-box .button .btn1 a {
+  padding: 8px 12px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+@media (min-width: 350px) {
+  .button-text .wrap-box .button .btn1 a {
+    padding: 10px 14px;
+  }
+}
+
+@media (min-width: 430px) {
+  .button-text .wrap-box .button .btn1 a {
+    padding: 11px 16px;
+  }
+}
+
+@media (min-width: 530px) {
+  .button-text .wrap-box .button .btn1 a {
+    padding: 12px 18px;
+  }
+}
+
+.button-text .wrap-box .button .btn2 a {
+  padding: 11px 28px;
+  color: #161616;
+  background-color: #fdce16;
+  font-size: 14px;
+  border-radius: 3px;
+  margin-left: 3px;
+  display: inline-block;
+}
+
+@media (min-width: 350px) {
+  .button-text .wrap-box .button .btn2 a {
+    padding: 14px 28px;
+  }
+}
+
+@media (min-width: 430px) {
+  .button-text .wrap-box .button .btn2 a {
+    padding: 14px 28px;
+  }
+}
+
+@media (min-width: 530px) {
+  .button-text .wrap-box .button .btn2 a {
+    padding: 15px 28px;
+  }
+}
+
+@media (min-width: 991px) {
+  .button-text {
+    margin-top: 20px;
+  }
+  .button-text .wrap-box {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .button-text .wrap-box .no-pad {
+    padding: 0px;
+  }
+  .button-text .wrap-box .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .button-text .wrap-box .text .wht-line {
+    width: 60px;
+    max-width: 100px;
+    background: #ffffff;
+    height: 2px;
+    margin-top: 20px;
+  }
+  .button-text .wrap-box .text .texts p {
+    padding-left: 14px;
+    font-size: 14px;
+    font-family: 'Myriad Pro';
+    color: #ffffff;
+    margin: 0px;
+  }
+  .button-text .wrap-box .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .button-text .wrap-box .button .btn1 {
+    margin-right: 3px;
+  }
+  .button-text .wrap-box .button .btn1 a {
+    padding: 14px 20px;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .button-text .wrap-box .button .btn2 a {
+    padding: 18px 34px;
+    color: #161616;
+    background-color: #fdce16;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-left: 3px;
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=style.css.map */

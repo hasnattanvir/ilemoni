@@ -4,6 +4,11 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+
+  body{
+      padding: 0px;
+      margin: 0px;
+  }
   *, *:before, *:after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
@@ -143,7 +148,9 @@ $border1:#e7e7e7;
 }
 
 // --------------------------------------- start manu section -----------------------
-
+.sticky-top{
+    background: $white;
+}
 .navbar{
     padding: 0px;
     margin: 0px;
@@ -192,7 +199,7 @@ $border1:#e7e7e7;
 }
 
 
-@media(min-width:990px){
+@media(min-width:992px){
     .navbar{
         padding: 0px;
         margin: 0px;
@@ -237,4 +244,364 @@ $border1:#e7e7e7;
            
         }
     }
+}
+
+
+// -------------------------------- start banner section -----------------
+
+.banner{
+    background-color: $black;
+   
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        
+   
+    @media(min-width: 450px){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .inner-box{
+        max-width: 100%;
+        margin: auto;
+        .text1{
+            .h1{
+                padding: 0px;
+                margin: 0px;
+                font-size: 40px;
+                color: $yellow;
+                font-family: 'Myriad Pro';
+                font-weight: bold;
+                line-height: 28px;
+                
+
+            }
+        }
+
+        .text2{
+            .inner-box{
+                font-family: 'Myriad Pro';
+
+                .h3{
+                    padding: 0px 0px 0px 127px;
+                    margin: 0px;
+                    font-size: 25px;
+                    line-height: 18px;
+                    color: $white;
+                    font-weight: bold;
+                }
+                .h1{
+                    padding: 0px 0px 0px 0px;
+                    margin: 0px;
+                    font-size: 40px;
+                    color: $white;
+                    font-weight: bold;
+                    line-height: 33px;
+                    padding-left: 100px;
+
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:330px){
+    .banner{
+        background-color: $black;
+       
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+      
+        .inner-box{
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+            .text1{
+                .h1{
+                    padding: 0px;
+                    margin: 0px;
+                    font-size: 50px;
+                    color: $yellow;
+                    font-family: 'Myriad Pro';
+                    font-weight: bold;
+                    line-height: 43px;
+    
+                }
+            }
+    
+            .text2{
+                .inner-box{
+                    font-family: 'Myriad Pro';
+                    text-align: center;
+    
+                    .h3{
+                        padding: 0px 0px 0px 0px;
+                        margin: 0px;
+                        font-size: 25px;
+                        color: $white;
+                        font-weight: bold;
+                    }
+                    .h1{
+                        padding: 0px 0px 0px 0px;
+                        margin: 0px;
+                        font-size: 50px;
+                        color: $white;
+                        font-weight: bold;
+                        line-height: 74px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:550px){
+    .banner{
+        
+            padding-top: 80px;
+            padding-bottom: 80px;
+       
+        .inner-box{
+            .text1{
+                .h1{
+                    font-size: 60px;
+                    line-height: 43px;
+    
+                }
+            }
+    
+            .text2{
+                .inner-box{
+                    font-family: 'Myriad Pro';
+                    text-align: center;
+    
+                    .h3{
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                    .h1{
+                        font-size: 60px;
+                        line-height: 74px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:990px){
+    .banner{
+        padding-top: 164px;
+        padding-bottom: 164px;
+        background-color: $black;
+        .banner_text{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .inner-box{
+            
+            width: 742px;
+            max-width: 100%;
+            text-align: unset;
+           
+            .text1{
+                .h1{
+                    padding: 0px;
+                    margin: 0px;
+                    font-size: 120px;
+                    color: $yellow;
+                    font-family: 'Myriad Pro';
+                    font-weight: bold;
+                    line-height: 43px;
+    
+                }
+            }
+    
+            .text2{
+                display: flex;
+                justify-content: flex-end;
+                .inner-box{
+                    font-family: 'Myriad Pro';
+    
+                    .h3{
+                        text-align: center;
+                        padding: 0px 0px 0px 144px;
+                        margin: 0px;
+                        font-size: 60px;
+                        color: $white;
+                        font-weight: bold;
+                        line-height: 70px;
+                    }
+                    .h1{
+                        text-align: right;
+                        padding: 0px 56px 0px 0px;
+                        margin: 0px;
+                        font-size: 120px;
+                        color: $white;
+                        font-weight: bold;
+                        line-height: 74px;
+    
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.button-text{
+    margin-top: 20px;
+    .wrap-box{
+        // width: 600px;
+        max-width: 100%;
+        margin: auto;
+        .no-pad{
+            padding: 0px;
+        }
+        .text{            
+            .texts{
+                width: 100%;
+                p{
+                    text-align: center;
+                    font-size: 14px;
+                    font-family: 'Myriad Pro';
+                    color: #ffffff;
+                    padding: 0px;
+                    margin-bottom: 10px;
+                }
+
+            }
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            .btn1{
+                a{
+                    padding:8px 12px;
+                    border: 3px solid $white;
+                    color: $white;
+                    font-size: 14px;
+                    border-radius: 3px;
+                    display: inline-block;
+                    @media(min-width:350px){
+                    padding:10px 14px;
+
+                    }
+                    @media(min-width:430px){
+                        padding:11px 16px;
+    
+                    }
+                    @media(min-width:530px){
+                        padding:12px 18px;
+    
+                    }
+                }
+                margin-right: 3px;
+            }
+            .btn2{
+                    a{
+                        padding:11px 28px;
+                        color: $black;
+                        background-color: $yellow;
+                        font-size: 14px;
+                        border-radius: 3px;
+                        margin-left: 3px;
+                        display: inline-block;
+                        @media(min-width:350px){
+                            padding:14px 28px;
+        
+                            }
+                            @media(min-width:430px){
+                                padding:14px 28px;
+            
+                            }
+                            @media(min-width:530px){
+                                padding:15px 28px;
+            
+                            }
+
+                    }
+
+            }
+        }
+
+    }
+}
+
+
+@media(min-width:991px){
+    .button-text{
+        margin-top: 20px;
+        .wrap-box{
+            width: 600px;
+            max-width: 100%;
+            margin: auto;
+            .no-pad{
+                padding: 0px;
+            }
+            .text{
+                display: flex;
+                .wht-line{
+                    width: 60px;
+                    max-width: 100px;
+                    background: $white;
+                    height: 2px;
+                    margin-top: 20px;
+                }
+                .texts{
+                    p{
+                        padding-left: 14px;
+                        font-size: 14px;
+                        font-family: 'Myriad Pro';
+                        color: #ffffff;
+                        margin: 0px;
+                    }
+    
+                }
+            }
+    
+            .button{
+                display: flex;
+                justify-content: flex-end;
+                .btn1{
+                    a{
+                        padding:14px 20px;
+                        border: 3px solid $white;
+                        color: $white;
+                        font-size: 14px;
+                        border-radius: 3px;
+                        display: inline-block;
+                    }
+                    margin-right: 3px;
+                }
+                .btn2{
+                        a{
+                            padding:18px 34px;
+                            color: $black;
+                            background-color: $yellow;
+                            font-size: 14px;
+                            border-radius: 3px;
+                            margin-left: 3px;
+                            display: inline-block;
+    
+                        }
+    
+                }
+            }
+    
+    
+    
+        }
+    }
+    
 }
