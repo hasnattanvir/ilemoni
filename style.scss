@@ -23,6 +23,15 @@
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 // font-family: 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 
@@ -70,11 +79,14 @@ $border1:#e7e7e7;
             }
 
             a{
-                font-size: 13px;
+                font-size: 10px;
                 font-family: Arial, Helvetica, sans-serif;
                 color: #bebebe;
                 text-decoration: none;
                 padding-right: 8px;
+                @media(min-width: 333px){
+                    font-size: 13px;
+                }
             }
             a:hover{
                 color: #ffd34c;
@@ -106,6 +118,7 @@ $border1:#e7e7e7;
             .box{
                 text-align: center;
                 i{
+                font-size: 14px;
                 color: #bebebe;
                 border-right: 1px solid #bebebe;
                 border-top: 1px solid #bebebe;
@@ -115,6 +128,9 @@ $border1:#e7e7e7;
                 }
                 padding: 9px 9px 9px 9px;
 
+                }
+                i:hover{
+                    color:$yellow;
                 }
                 
             }
@@ -128,3 +144,97 @@ $border1:#e7e7e7;
 
 // --------------------------------------- start manu section -----------------------
 
+.navbar{
+    padding: 0px;
+    margin: 0px;
+    .navbar-brand{
+        img{
+            width: 100%;
+            max-width: 80px;
+        }
+    }
+    .navbar-toggler{
+        border: none;
+    }
+
+    .navbar-nav{
+        .nav-item{
+            text-align: center;
+            .nav-link{
+                color: $black;
+                font-size: 14px;
+                padding:5px 0px 5px 0px ;
+                font-family: 'Myriad Pro';
+            }
+        }
+        .nav-item-hover::after{
+            margin: auto;
+            display: flex;
+            margin-top: 2px;
+            content: '';
+            display: block;
+            width: 0px;
+            height: 3px;
+            background-color: $yellow;
+            transition: width .3s;
+        }
+        .nav-item-hover:hover::after{
+            width: 7%;
+            transition: width .3s;
+            color: $yellow;
+        }
+
+        .nav-item:last-child .nav-link{
+            padding-right: 0px;
+        }
+       
+    }
+}
+
+
+@media(min-width:990px){
+    .navbar{
+        padding: 0px;
+        margin: 0px;
+        
+        .navbar-toggler{
+            border: none;
+        }
+    
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $black;
+                    font-size: 14px;
+                    padding: 36px 12px 36px 12px ;
+                    font-family: 'Myriad Pro';
+    
+                }
+                .nav-link:hover{
+                    color: $yellow;
+                }
+    
+            }
+
+            .nav-item-hover::before{
+                    margin-top: 0px;
+                    content: '';
+                    display: block;
+                    width: 0px;
+                    height: 3px;
+                    background-color: $yellow;
+                    transition: width .3s;
+                }
+                .nav-item-hover:hover::before{
+                    width: 100%;
+                    transition: width .3s;
+                    color: $yellow;
+                }
+
+            .nav-item:last-child .nav-link{
+                padding-right: 0px;
+            }
+           
+        }
+    }
+}

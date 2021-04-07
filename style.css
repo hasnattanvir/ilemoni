@@ -18,6 +18,14 @@ a:hover {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("fonts/MyriadPro-Regular.woff2") format("woff2"), url("fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .container {
   width: 1171px;
   max-width: 100%;
@@ -54,11 +62,17 @@ a:hover {
 }
 
 .main_div .header_info .email a, .main_div .header_info .number a {
-  font-size: 13px;
+  font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
   color: #bebebe;
   text-decoration: none;
   padding-right: 8px;
+}
+
+@media (min-width: 333px) {
+  .main_div .header_info .email a, .main_div .header_info .number a {
+    font-size: 13px;
+  }
 }
 
 .main_div .header_info .email a:hover, .main_div .header_info .number a:hover {
@@ -95,6 +109,7 @@ a:hover {
 }
 
 .main_div .social .icon .box i {
+  font-size: 14px;
   color: #bebebe;
   border-right: 1px solid #bebebe;
   border-top: 1px solid #bebebe;
@@ -108,7 +123,100 @@ a:hover {
   }
 }
 
+.main_div .social .icon .box i:hover {
+  color: #fdce16;
+}
+
 .main_div .social .icon .left-b {
   border-left: 1px solid #bebebe;
+}
+
+.navbar {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar .navbar-brand img {
+  width: 100%;
+  max-width: 80px;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-nav .nav-item {
+  text-align: center;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #161616;
+  font-size: 14px;
+  padding: 5px 0px 5px 0px;
+  font-family: 'Myriad Pro';
+}
+
+.navbar .navbar-nav .nav-item-hover::after {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2px;
+  content: '';
+  display: block;
+  width: 0px;
+  height: 3px;
+  background-color: #fdce16;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.navbar .navbar-nav .nav-item-hover:hover::after {
+  width: 7%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  color: #fdce16;
+}
+
+.navbar .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0px;
+}
+
+@media (min-width: 990px) {
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+  }
+  .navbar .navbar-toggler {
+    border: none;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #161616;
+    font-size: 14px;
+    padding: 36px 12px 36px 12px;
+    font-family: 'Myriad Pro';
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #fdce16;
+  }
+  .navbar .navbar-nav .nav-item-hover::before {
+    margin-top: 0px;
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: #fdce16;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+  }
+  .navbar .navbar-nav .nav-item-hover:hover::before {
+    width: 100%;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+    color: #fdce16;
+  }
+  .navbar .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
